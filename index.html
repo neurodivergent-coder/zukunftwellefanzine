@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zukunft Welle Fanzine - Digitales STEAM Magazin</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Courier+Prime:wght@400;700&family=Orbitron:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        box-sizing: border-box;
+      }
+
+      .typewriter-title {
+        font-family: "Special Elite", monospace;
+      }
+
+      .typewriter-text {
+        font-family: "Courier Prime", monospace;
+      }
+
+      .logo-font {
+        font-family: "Orbitron", monospace;
+      }
+
+      .newspaper-column {
+        column-count: 2;
+        column-gap: 2rem;
+        column-rule: 1px solid #000;
+      }
+
+      @media (max-width: 768px) {
+        .newspaper-column {
+          column-count: 1;
+        }
+      }
+
+      .dev-symbols {
+        font-family: "Courier Prime", monospace;
+        font-weight: bold;
+      }
+
+      .section-hover:hover {
+        background-color: #f3f4f6;
+        transform: translateX(5px);
+        transition: all 0.3s ease;
+      }
+
+      .highlight-box {
+        border: 3px solid #000;
+        background: repeating-linear-gradient(
+          45deg,
+          transparent,
+          transparent 10px,
+          #f9f9f9 10px,
+          #f9f9f9 20px
+        );
+      }
+    </style>
+  </head>
+  <body class="bg-white text-black min-h-full">
+    <!-- Navigation -->
+    <nav class="bg-black text-white border-b-2 border-black">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+          <div class="typewriter-title text-xl font-bold"></div>
+          <button
+            id="mobile-menu-btn"
+            class="md:hidden typewriter-title text-lg font-bold flex items-center gap-2"
+          >
+            ☰ Menü
+          </button>
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:block pb-4">
+          <div class="grid grid-cols-5 gap-3 typewriter-title text-sm">
+            <a href="#startseite" class="hover:bg-gray-800 p-3 block"
+              >Startseite</a
+            >
+            <a href="#ueber-uns" class="hover:bg-gray-800 p-3 block"
+              >Über uns</a
+            >
+            <a href="#kontakt" class="hover:bg-gray-800 p-3 block">Kontakt</a>
+            <a href="#codechaos" class="hover:bg-gray-800 p-3 block"
+              >Codechaos</a
+            >
+            <a href="#datenjunkies" class="hover:bg-gray-800 p-3 block"
+              >Datenjunkies</a
+            >
+            <a href="#maschinengefluster" class="hover:bg-gray-800 p-3 block"
+              >Maschinengeflüster</a
+            >
+            <a href="#stahlrebellen" class="hover:bg-gray-800 p-3 block"
+              >Stahlrebellen</a
+            >
+            <a href="#orakel" class="hover:bg-gray-800 p-3 block">Orakel 2.0</a>
+            <a href="#grenzsprenger" class="hover:bg-gray-800 p-3 block"
+              >Grenzsprenger</a
+            >
+            <a href="#design" class="hover:bg-gray-800 p-3 block">Design</a>
+            <a href="#papierrebellen" class="hover:bg-gray-800 p-3 block"
+              >Papierrebellen</a
+            >
+            <a href="#stimmenrausch" class="hover:bg-gray-800 p-3 block"
+              >Stimmenrausch</a
+            >
+            <a href="#habenwollen" class="hover:bg-gray-800 p-3 block"
+              >Habenwollen</a
+            >
+            <a href="#fluchtgedanken" class="hover:bg-gray-800 p-3 block"
+              >Fluchtgedanken</a
+            >
+            <a href="#bassattacke" class="hover:bg-gray-800 p-3 block"
+              >Bassattacke</a
+            >
+            <a href="#normbrecher" class="hover:bg-gray-800 p-3 block"
+              >Normbrecher</a
+            >
+            <a href="#zungenakrobatik" class="hover:bg-gray-800 p-3 block"
+              >Zungenakrobatik</a
+            >
+            <a href="#lebensgeschichten" class="hover:bg-gray-800 p-3 block"
+              >Lebensgeschichten</a
+            >
+            <a href="#grenzenlos" class="hover:bg-gray-800 p-3 block"
+              >Grenzenlos</a
+            >
+            <a href="#kopfkino" class="hover:bg-gray-800 p-3 block">Kopfkino</a>
+            <a href="#stilrebellion" class="hover:bg-gray-800 p-3 block"
+              >Stilrebellion</a
+            >
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden pb-4">
+          <div class="grid grid-cols-2 gap-3 typewriter-title text-sm">
+            <a href="#startseite" class="hover:bg-gray-800 p-3 block"
+              >Startseite</a
+            >
+            <a href="#ueber-uns" class="hover:bg-gray-800 p-3 block"
+              >Über uns</a
+            >
+            <a href="#kontakt" class="hover:bg-gray-800 p-3 block">Kontakt</a>
+            <a href="#codechaos" class="hover:bg-gray-800 p-3 block"
+              >Codechaos</a
+            >
+            <a href="#datenjunkies" class="hover:bg-gray-800 p-3 block"
+              >Datenjunkies</a
+            >
+            <a href="#maschinengefluster" class="hover:bg-gray-800 p-3 block"
+              >Maschinengeflüster</a
+            >
+            <a href="#stahlrebellen" class="hover:bg-gray-800 p-3 block"
+              >Stahlrebellen</a
+            >
+            <a href="#orakel" class="hover:bg-gray-800 p-3 block">Orakel 2.0</a>
+            <a href="#grenzsprenger" class="hover:bg-gray-800 p-3 block"
+              >Grenzsprenger</a
+            >
+            <a href="#design" class="hover:bg-gray-800 p-3 block">Design</a>
+            <a href="#papierrebellen" class="hover:bg-gray-800 p-3 block"
+              >Papierrebellen</a
+            >
+            <a href="#stimmenrausch" class="hover:bg-gray-800 p-3 block"
+              >Stimmenrausch</a
+            >
+            <a href="#habenwollen" class="hover:bg-gray-800 p-3 block"
+              >Habenwollen</a
+            >
+            <a href="#fluchtgedanken" class="hover:bg-gray-800 p-3 block"
+              >Fluchtgedanken</a
+            >
+            <a href="#bassattacke" class="hover:bg-gray-800 p-3 block"
+              >Bassattacke</a
+            >
+            <a href="#normbrecher" class="hover:bg-gray-800 p-3 block"
+              >Normbrecher</a
+            >
+            <a href="#zungenakrobatik" class="hover:bg-gray-800 p-3 block"
+              >Zungenakrobatik</a
+            >
+            <a href="#lebensgeschichten" class="hover:bg-gray-800 p-3 block"
+              >Lebensgeschichten</a
+            >
+            <a href="#grenzenlos" class="hover:bg-gray-800 p-3 block"
+              >Grenzenlos</a
+            >
+            <a href="#kopfkino" class="hover:bg-gray-800 p-3 block">Kopfkino</a>
+            <a href="#stilrebellion" class="hover:bg-gray-800 p-3 block"
+              >Stilrebellion</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header class="border-b-4 border-black bg-white">
+      <div class="max-w-6xl mx-auto px-4 py-6">
+        <!-- Logo -->
+        <div class="text-center mb-6">
+          <div class="logo-font text-4xl md:text-6xl font-black tracking-wider">
+            <span class="dev-symbols">{ </span>
+            ZUKUNFT WELLE FANZINE
+            <span class="dev-symbols"> }</span>
+          </div>
+        </div>
+
+        <!-- Tagline -->
+        <div class="text-center border-t-2 border-b-2 border-black py-4">
+          <p class="typewriter-text text-lg md:text-xl font-bold">
+            Ein digitales Magazin für alle, die sich für STEAM, Technologie,
+            Kunst und Kultur begeistern.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-8">
+      <!-- Featured Headlines -->
+      <section class="mb-12">
+        <div class="grid md:grid-cols-2 gap-8">
+          <article class="highlight-box p-6">
+            <h2
+              class="typewriter-title text-2xl md:text-3xl font-bold mb-4 leading-tight"
+            >
+              Sind Data Scientists die neuen „Orakel" des 21. Jahrhunderts?
+            </h2>
+            <p class="typewriter-text text-sm mb-2 font-bold">DATENJUNKIES</p>
+            <p class="typewriter-text text-sm leading-relaxed">
+              Die Macht der Daten verändert unsere Welt. Wie moderne Wahrsager
+              nutzen Data Scientists Algorithmen...
+            </p>
+          </article>
+
+          <article class="border-4 border-black p-6 bg-black text-white">
+            <h2
+              class="typewriter-title text-2xl md:text-3xl font-bold mb-4 leading-tight"
+            >
+              Pixel, Pinsel, Programmcode: Wer malt die Zukunft?
+            </h2>
+            <p class="typewriter-text text-sm mb-2 font-bold">
+              MASCHINENGEFLÜSTER
+            </p>
+            <p class="typewriter-text text-sm leading-relaxed">
+              Künstliche Intelligenz trifft auf traditionelle Kunst. Eine
+              Revolution der Kreativität...
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="mb-12 border-4 border-black p-8">
+        <h2 class="typewriter-title text-3xl font-bold mb-6 text-center">
+          Was ist Zukunft Welle?
+        </h2>
+        <div
+          class="newspaper-column typewriter-text text-sm leading-relaxed mb-8"
+        >
+          <p>
+            Wir sind ein digitales Magazin, das sich aktiv für die Förderung der
+            Diversität in all ihren Formen einsetzt – sei es im Hinblick auf
+            Alter, Geschlecht, Sprache, religiöse Überzeugungen oder kulturelle
+            Herkunft. Wir beschäftigen uns mit Themen wie Diversität (sexuell,
+            kulturell, neurodivers), Migration, Nachhaltigkeit und
+            Zukunftstechnologien. Unsere Mission ist es, STEAM-Inhalte auf eine
+            zugängliche, kreative und interaktive Weise zu fördern – ohne
+            Grenzen.
+          </p>
+        </div>
+        <h3
+          class="typewriter-title text-2xl font-bold mb-4 text-center border-t-2 border-black pt-6"
+        >
+          Mission
+        </h3>
+        <div class="typewriter-text text-sm leading-relaxed text-center">
+          <p>
+            Mission ist es, STEAM-Inhalte auf zugängliche, kreative und
+            interaktive Weise zu fördern, unabhängig von Grenzen.
+          </p>
+        </div>
+      </section>
+
+      <!-- Sections Grid -->
+      <section class="mb-12">
+        <h2
+          class="typewriter-title text-3xl font-bold mb-8 text-center border-b-2 border-black pb-4"
+        >
+          KATEGORIEN
+        </h2>
+        <div class="grid md:grid-cols-3 gap-4">
+          <div class="section-hover border-2 border-black p-4 cursor-pointer">
+            <h3 class="typewriter-title text-lg font-bold">
+              Softwareentwicklung
+            </h3>
+            <p class="typewriter-text text-sm font-bold">→ CODECHAOS</p>
+          </div>
+          <div class="section-hover border-2 border-black p-4 cursor-pointer">
+            <h3 class="typewriter-title text-lg font-bold">Data Science</h3>
+            <p class="typewriter-text text-sm font-bold">→ DATENJUNKIES</p>
+          </div>
+          <div class="section-hover border-2 border-black p-4 cursor-pointer">
+            <h3 class="typewriter-title text-lg font-bold">
+              Künstliche Intelligenz
+            </h3>
+            <p class="typewriter-text text-sm font-bold">
+              → MASCHINENGEFLÜSTER
+            </p>
+          </div>
+          <div class="section-hover border-2 border-black p-4 cursor-pointer">
+            <h3 class="typewriter-title text-lg font-bold">Robotik</h3>
+            <p class="typewriter-text text-sm font-bold">→ STAHLREBELLEN</p>
+          </div>
+          <div class="section-hover border-2 border-black p-4 cursor-pointer">
+            <h3 class="typewriter-title text-lg font-bold">Prognose</h3>
+            <p class="typewriter-text text-sm font-bold">→ ORAKEL 2.0</p>
+          </div>
+          <div class="section-hover border-2 border-black p-4 cursor-pointer">
+            <h3 class="typewriter-title text-lg font-bold">Kunst</h3>
+            <p class="typewriter-text text-sm font-bold">→ GRENZSPRENGER</p>
+          </div>
+          <div class="section-hover border-2 border-black p-4 cursor-pointer">
+            <h3 class="typewriter-title text-lg font-bold">
+              Menschenzentriertes Design
+            </h3>
+            <p class="typewriter-text text-sm font-bold">→ DESIGN</p>
+          </div>
+          <div class="section-hover border-2 border-black p-4 cursor-pointer">
+            <h3 class="typewriter-title text-lg font-bold">Bücher</h3>
+            <p class="typewriter-text text-sm font-bold">→ PAPIERREBELLEN</p>
+          </div>
+          <div class="section-hover border-2 border-black p-4 cursor-pointer">
+            <h3 class="typewriter-title text-lg font-bold">Podcast</h3>
+            <p class="typewriter-text text-sm font-bold">→ STIMMENRAUSCH</p>
+          </div>
+          <div class="section-hover border-2 border-black p-4 cursor-pointer">
+            <h3 class="typewriter-title text-lg font-bold">Shop</h3>
+            <p class="typewriter-text text-sm font-bold">→ HABENWOLLEN</p>
+          </div>
+          <div class="section-hover border-2 border-black p-4 cursor-pointer">
+            <h3 class="typewriter-title text-lg font-bold">Reisepass</h3>
+            <p class="typewriter-text text-sm font-bold">→ FLUCHTGEDANKEN</p>
+          </div>
+          <div class="section-hover border-2 border-black p-4 cursor-pointer">
+            <h3 class="typewriter-title text-lg font-bold">Musik</h3>
+            <p class="typewriter-text text-sm font-bold">→ BASSATTACKE</p>
+          </div>
+          <div class="section-hover border-2 border-black p-4 cursor-pointer">
+            <h3 class="typewriter-title text-lg font-bold">Vielfalt</h3>
+            <p class="typewriter-text text-sm font-bold">→ NORMBRECHER</p>
+          </div>
+          <div class="section-hover border-2 border-black p-4 cursor-pointer">
+            <h3 class="typewriter-title text-lg font-bold">Sprachen</h3>
+            <p class="typewriter-text text-sm font-bold">→ ZUNGENAKROBATIK</p>
+          </div>
+          <div class="section-hover border-2 border-black p-4 cursor-pointer">
+            <h3 class="typewriter-title text-lg font-bold">
+              Lebensgeschichten
+            </h3>
+            <p class="typewriter-text text-sm font-bold">→ LEBENSGESCHICHTEN</p>
+          </div>
+          <div class="section-hover border-2 border-black p-4 cursor-pointer">
+            <h3 class="typewriter-title text-lg font-bold">Multikulturell</h3>
+            <p class="typewriter-text text-sm font-bold">→ GRENZENLOS</p>
+          </div>
+          <div class="section-hover border-2 border-black p-4 cursor-pointer">
+            <h3 class="typewriter-title text-lg font-bold">Film</h3>
+            <p class="typewriter-text text-sm font-bold">→ KOPFKINO</p>
+          </div>
+          <div class="section-hover border-2 border-black p-4 cursor-pointer">
+            <h3 class="typewriter-title text-lg font-bold">Mode</h3>
+            <p class="typewriter-text text-sm font-bold">→ STILREBELLION</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Values Section -->
+      <section class="mb-12 bg-black text-white p-8">
+        <h2 class="typewriter-title text-3xl font-bold mb-6 text-center">
+          UNSERE WERTE
+        </h2>
+        <div class="grid md:grid-cols-2 gap-6 typewriter-text text-sm">
+          <div>
+            <h3 class="font-bold mb-2">Multikulturalität</h3>
+            <p>
+              Wir feiern kulturelle Vielfalt und sehen sie als Chance für
+              Innovation.
+            </p>
+          </div>
+          <div>
+            <h3 class="font-bold mb-2">Kreativität</h3>
+            <p>
+              Wir verbinden Kunst, Wissenschaft und Technologie in neuen Formen.
+            </p>
+          </div>
+          <div>
+            <h3 class="font-bold mb-2">Neugier</h3>
+            <p>Wir fördern eine Haltung des lebenslangen Lernens.</p>
+          </div>
+          <div>
+            <h3 class="font-bold mb-2">Nachhaltigkeit</h3>
+            <p>Wir setzen uns für verantwortungsbewusstes Handeln ein.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Form -->
+      <section id="kontakt" class="border-4 border-black p-8 mb-12">
+        <h2 class="typewriter-title text-3xl font-bold mb-6 text-center">
+          Kontakt
+        </h2>
+        <div class="max-w-2xl mx-auto">
+          <p class="typewriter-text text-sm leading-relaxed mb-8 text-center">
+            Für weitere Informationen oder bei Fragen können Sie uns gerne eine
+            E-Mail an
+            <strong>alejandrabarcena@zukunftwellefanzine.de</strong> senden. Wir
+            werden uns in Kürze bei Ihnen melden.
+          </p>
+
+          <form class="space-y-6" onsubmit="handleFormSubmit(event)">
+            <div>
+              <label
+                for="name"
+                class="typewriter-title text-sm font-bold block mb-2"
+                >Name *</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                class="w-full border-2 border-black p-3 typewriter-text text-sm focus:outline-none focus:ring-2 focus:ring-gray-400"
+              />
+            </div>
+
+            <div>
+              <label
+                for="email"
+                class="typewriter-title text-sm font-bold block mb-2"
+                >E-Mail *</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                class="w-full border-2 border-black p-3 typewriter-text text-sm focus:outline-none focus:ring-2 focus:ring-gray-400"
+              />
+            </div>
+
+            <div>
+              <label
+                for="subject"
+                class="typewriter-title text-sm font-bold block mb-2"
+                >Betreff</label
+              >
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                class="w-full border-2 border-black p-3 typewriter-text text-sm focus:outline-none focus:ring-2 focus:ring-gray-400"
+              />
+            </div>
+
+            <div>
+              <label
+                for="message"
+                class="typewriter-title text-sm font-bold block mb-2"
+                >Nachricht *</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                required
+                class="w-full border-2 border-black p-3 typewriter-text text-sm focus:outline-none focus:ring-2 focus:ring-gray-400 resize-vertical"
+              ></textarea>
+            </div>
+
+            <div class="text-center">
+              <button
+                type="submit"
+                class="bg-black text-white px-8 py-3 typewriter-title font-bold hover:bg-gray-800 transition-colors duration-300 border-2 border-black"
+              >
+                NACHRICHT SENDEN
+              </button>
+            </div>
+          </form>
+
+          <div
+            id="form-message"
+            class="hidden mt-6 p-4 border-2 border-black text-center"
+          >
+            <p class="typewriter-text text-sm"></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- More Headlines -->
+      <section class="border-t-4 border-black pt-8">
+        <h2 class="typewriter-title text-2xl font-bold mb-6">
+          AKTUELLE THEMEN
+        </h2>
+        <div class="grid md:grid-cols-2 gap-6">
+          <article class="border-l-4 border-black pl-4">
+            <h3 class="typewriter-title text-xl font-bold mb-2">
+              Maschinengeflüster: KI-Revolution
+            </h3>
+            <p class="typewriter-text text-sm">
+              Softwareentwicklung trifft auf Künstliche Intelligenz...
+            </p>
+          </article>
+          <article class="border-l-4 border-black pl-4">
+            <h3 class="typewriter-title text-xl font-bold mb-2">
+              Prognose trifft Kreativität: Mode von morgen
+            </h3>
+            <p class="typewriter-text text-sm">
+              Wie Forecasting die Stilrebellion bestimmt...
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t-4 border-black bg-black text-white mt-12">
+      <div class="max-w-6xl mx-auto px-4 py-8 text-center">
+        <div class="logo-font text-2xl font-bold mb-4">
+          <span class="dev-symbols">{</span> ZUKUNFT WELLE FANZINE
+          <span class="dev-symbols">}</span>
+        </div>
+        <p class="typewriter-text text-sm mb-4">
+          Eine wachsende globale Community für STEAM, Kultur und Vielfalt
+        </p>
+
+        <!-- Contact -->
+        <div class="mb-6">
+          <h3 class="typewriter-title text-lg font-bold mb-2">KONTAKT</h3>
+          <p class="typewriter-text text-sm mb-2">
+            alejandrabarcena@zukunftwellefanzine.de
+          </p>
+          <p class="typewriter-text text-sm">
+            Landsberger Str. 68, 80339 München, Alemania
+          </p>
+        </div>
+
+        <!-- Social Media -->
+        <div class="mb-6">
+          <h3 class="typewriter-title text-lg font-bold mb-3">FOLGE UNS</h3>
+          <div class="flex justify-center space-x-6 typewriter-text text-sm">
+            <a
+              href="#"
+              class="hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+              >PINTEREST</a
+            >
+            <a
+              href="#"
+              class="hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+              >TIKTOK</a
+            >
+            <a
+              href="#"
+              class="hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+              >INSTAGRAM</a
+            >
+            <a
+              href="#"
+              class="hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GITHUB</a
+            >
+          </div>
+        </div>
+
+        <div class="dev-symbols text-xs mt-4">
+          &lt;/html&gt; • © 2024 •
+          &lt;script&gt;console.log('Zukunft')&lt;/script&gt;
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      document
+        .getElementById("mobile-menu-btn")
+        .addEventListener("click", function () {
+          const mobileMenu = document.getElementById("mobile-menu");
+          if (mobileMenu.classList.contains("hidden")) {
+            mobileMenu.classList.remove("hidden");
+            this.textContent = "✕ Schließen";
+          } else {
+            mobileMenu.classList.add("hidden");
+            this.textContent = "☰ Menü";
+          }
+        });
+
+      // Close mobile menu when clicking on a link
+      document.querySelectorAll("#mobile-menu a").forEach((link) => {
+        link.addEventListener("click", function () {
+          const mobileMenu = document.getElementById("mobile-menu");
+          const menuBtn = document.getElementById("mobile-menu-btn");
+          mobileMenu.classList.add("hidden");
+          menuBtn.textContent = "☰ Menü";
+        });
+      });
+
+      // Handle form submission
+      function handleFormSubmit(event) {
+        event.preventDefault();
+
+        const formMessage = document.getElementById("form-message");
+        const messageText = formMessage.querySelector("p");
+
+        // Show success message
+        messageText.textContent =
+          "Vielen Dank für Ihre Nachricht! Wir werden uns in Kürze bei Ihnen melden.";
+        formMessage.classList.remove("hidden");
+        formMessage.classList.add(
+          "bg-green-100",
+          "border-green-500",
+          "text-green-700"
+        );
+
+        // Reset form
+        event.target.reset();
+
+        // Hide message after 5 seconds
+        setTimeout(() => {
+          formMessage.classList.add("hidden");
+          formMessage.classList.remove(
+            "bg-green-100",
+            "border-green-500",
+            "text-green-700"
+          );
+        }, 5000);
+      }
+    </script>
+    <script>
+      (function () {
+        function c() {
+          var b = a.contentDocument || a.contentWindow.document;
+          if (b) {
+            var d = b.createElement("script");
+            d.innerHTML =
+              "window.__CF$cv$params={r:'993bdcac1597a634',t:'MTc2MTMzMzk0Ni4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+            b.getElementsByTagName("head")[0].appendChild(d);
+          }
+        }
+        if (document.body) {
+          var a = document.createElement("iframe");
+          a.height = 1;
+          a.width = 1;
+          a.style.position = "absolute";
+          a.style.top = 0;
+          a.style.left = 0;
+          a.style.border = "none";
+          a.style.visibility = "hidden";
+          document.body.appendChild(a);
+          if ("loading" !== document.readyState) c();
+          else if (window.addEventListener)
+            document.addEventListener("DOMContentLoaded", c);
+          else {
+            var e = document.onreadystatechange || function () {};
+            document.onreadystatechange = function (b) {
+              e(b);
+              "loading" !== document.readyState &&
+                ((document.onreadystatechange = e), c());
+            };
+          }
+        }
+      })();
+    </script>
+  </body>
+</html>
