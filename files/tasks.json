@@ -3,7 +3,7 @@
   "setupTasks": [
     {
       "command": "yarn install",
-      "name": "Install Dependencies"
+      "name": "Installing Dependencies"
     }
   ],
 
