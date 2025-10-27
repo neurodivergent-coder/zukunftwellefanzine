@@ -202,73 +202,179 @@
     <header class="border-b-4 border-black bg-white">
       <div class="max-w-6xl mx-auto px-4 py-8 md:py-12">
         <!-- Logo -->
-        <div class="text-center mb-8 md:mb-10">
-          <div class="flex justify-center items-center">
+        <div class="text-center mb-6 md:mb-10">
+          <div class="flex justify-center items-center px-2">
             <img
               src="https://raw.githubusercontent.com/neurodivergent-coder/landingpage/037776998b10040bf9c03760d028370932a471b4/logo%20zukungtwelle%20fanzine.svg"
               alt="Zukunft Welle Fanzine Logo"
-              class="h-24 md:h-32 lg:h-40 w-auto max-w-full"
+              class="h-20 md:h-32 lg:h-40 w-auto max-w-full"
               onerror="this.style.display='none'; document.getElementById('fallback-logo').style.display='block';"
             />
             <!-- Fallback logo if SVG fails to load -->
             <div
               id="fallback-logo"
-              class="logo-font text-4xl md:text-6xl font-black tracking-wider"
+              class="logo-font text-2xl md:text-6xl font-black tracking-wider text-center"
               style="display: none"
             >
               <span class="dev-symbols">{ </span>
-              ZUKUNFT WELLE FANZINE
+              <span class="block md:inline">ZUKUNFT WELLE</span>
+              <span class="block md:inline">FANZINE</span>
               <span class="dev-symbols"> }</span>
             </div>
           </div>
         </div>
 
         <!-- Tagline -->
-        <div class="text-center border-t-2 border-b-2 border-black py-4">
-          <p class="typewriter-text text-lg md:text-xl font-bold">
+        <div
+          class="text-center border-t-2 border-b-2 border-black py-3 md:py-4 mx-2 md:mx-0"
+        >
+          <p
+            class="typewriter-text text-sm md:text-xl font-bold leading-tight md:leading-normal px-2"
+          >
             Ein digitales Magazin für alle, die sich für STEAM, Technologie,
             Kunst und Kultur begeistern.
           </p>
+        </div>
+
+        <!-- Mini Featured Notes -->
+        <div class="mt-6 md:mt-8 px-2 md:px-0">
+          <h3
+            class="typewriter-title text-xl md:text-2xl font-bold mb-4 md:mb-6 text-center"
+          >
+            DESTACADAS NOTAS
+          </h3>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 md:gap-4"
+          >
+            <!-- Mod Subculture -->
+            <div
+              class="border-4 border-red-600 p-3 md:p-4 bg-white hover:shadow-lg transition-shadow cursor-pointer"
+            >
+              <div
+                class="bg-red-600 text-white px-2 py-1 text-xs font-bold mb-2 inline-block"
+              >
+                STILREBELLION
+              </div>
+              <img
+                src="https://raw.githubusercontent.com/neurodivergent-coder/landingpage/refs/heads/main/20250927_1632_Bunte%20Mod-Subkultur_simple_compose_01k66mte0ke7eb1kwmyskr950c.png"
+                alt="Mod-Subkultur"
+                class="w-full h-16 md:h-20 object-cover mb-2 border border-black"
+                onerror="this.style.display='none';"
+              />
+              <h4
+                class="typewriter-title text-xs md:text-sm font-bold leading-tight"
+              >
+                Die Mod-Subkultur
+              </h4>
+            </div>
+
+            <!-- Walter Reuter -->
+            <div
+              class="border-4 border-blue-600 p-3 md:p-4 bg-white hover:shadow-lg transition-shadow cursor-pointer"
+            >
+              <div
+                class="bg-blue-600 text-white px-2 py-1 text-xs font-bold mb-2 inline-block"
+              >
+                LEBENSGESCHICHTEN
+              </div>
+              <img
+                src="https://raw.githubusercontent.com/neurodivergent-coder/landingpage/refs/heads/main/20250822_0250_Walter-Reuter-Preis%20Mexiko_simple_compose_01k38fex1vf7gvx9743dxt454b.png"
+                alt="Walter-Reuter-Preis"
+                class="w-full h-16 md:h-20 object-cover mb-2 border border-black"
+                onerror="this.style.display='none';"
+              />
+              <h4
+                class="typewriter-title text-xs md:text-sm font-bold leading-tight"
+              >
+                Walter-Reuter-Preis
+              </h4>
+            </div>
+
+            <!-- German Classical Music -->
+            <div
+              class="border-4 border-purple-600 p-3 md:p-4 bg-white hover:shadow-lg transition-shadow cursor-pointer"
+            >
+              <div
+                class="bg-purple-600 text-white px-2 py-1 text-xs font-bold mb-2 inline-block"
+              >
+                BASSATTACKE
+              </div>
+              <img
+                src="https://raw.githubusercontent.com/neurodivergent-coder/landingpage/refs/heads/main/20250822_0216_Deutsche%20Klassische%20Musik_simple_compose_01k38dgvwcfh6s3972mr04z1as.png"
+                alt="Deutsche Klassische Musik"
+                class="w-full h-16 md:h-20 object-cover mb-2 border border-black"
+                onerror="this.style.display='none';"
+              />
+              <h4
+                class="typewriter-title text-xs md:text-sm font-bold leading-tight"
+              >
+                Deutsche Klassik
+              </h4>
+            </div>
+
+            <!-- Tech Innovation -->
+            <div
+              class="border-4 border-green-600 p-3 md:p-4 bg-white hover:shadow-lg transition-shadow cursor-pointer"
+            >
+              <div
+                class="bg-green-600 text-white px-2 py-1 text-xs font-bold mb-2 inline-block"
+              >
+                CODECHAOS
+              </div>
+              <div
+                class="w-full h-16 md:h-20 bg-gradient-to-br from-green-400 via-blue-500 to-purple-600 mb-2 border border-black flex items-center justify-center"
+              >
+                <span class="text-white text-xl md:text-2xl">🤖</span>
+              </div>
+              <h4
+                class="typewriter-title text-xs md:text-sm font-bold leading-tight"
+              >
+                Künstliche Intelligenz
+              </h4>
+            </div>
+          </div>
         </div>
       </div>
     </header>
 
     <main class="max-w-6xl mx-auto px-4 py-8">
       <!-- Featured Headlines -->
-      <section class="mb-12">
-        <div class="grid md:grid-cols-2 gap-8">
-          <article class="highlight-box p-6">
+      <section class="mb-8 md:mb-12 px-2 md:px-0">
+        <div class="grid md:grid-cols-2 gap-4 md:gap-8">
+          <article class="highlight-box p-4 md:p-6">
             <a
               href="#datenjunkies"
               class="block hover:opacity-80 transition-opacity"
             >
               <h2
-                class="typewriter-title text-2xl md:text-3xl font-bold mb-4 leading-tight"
+                class="typewriter-title text-lg md:text-3xl font-bold mb-3 md:mb-4 leading-tight"
               >
                 Sind Data Scientists die neuen „Orakel" des 21. Jahrhunderts?
               </h2>
-              <p class="typewriter-text text-sm mb-2 font-bold">DATENJUNKIES</p>
-              <p class="typewriter-text text-sm leading-relaxed">
+              <p class="typewriter-text text-xs md:text-sm mb-2 font-bold">
+                DATENJUNKIES
+              </p>
+              <p class="typewriter-text text-xs md:text-sm leading-relaxed">
                 Die Macht der Daten verändert unsere Welt. Wie moderne Wahrsager
                 nutzen Data Scientists Algorithmen...
               </p>
             </a>
           </article>
 
-          <article class="border-4 border-black p-6 bg-black text-white">
+          <article class="border-4 border-black p-4 md:p-6 bg-black text-white">
             <a
               href="#maschinengefluster"
               class="block hover:opacity-80 transition-opacity text-white"
             >
               <h2
-                class="typewriter-title text-2xl md:text-3xl font-bold mb-4 leading-tight"
+                class="typewriter-title text-lg md:text-3xl font-bold mb-3 md:mb-4 leading-tight"
               >
                 Pixel, Pinsel, Programmcode: Wer malt die Zukunft?
               </h2>
-              <p class="typewriter-text text-sm mb-2 font-bold">
+              <p class="typewriter-text text-xs md:text-sm mb-2 font-bold">
                 MASCHINENGEFLÜSTER
               </p>
-              <p class="typewriter-text text-sm leading-relaxed">
+              <p class="typewriter-text text-xs md:text-sm leading-relaxed">
                 Künstliche Intelligenz trifft auf traditionelle Kunst. Eine
                 Revolution der Kreativität...
               </p>
@@ -277,21 +383,21 @@
         </div>
 
         <!-- Additional Featured Article -->
-        <div class="mt-8">
-          <article class="border-2 border-black p-6 bg-gray-50">
+        <div class="mt-4 md:mt-8">
+          <article class="border-2 border-black p-4 md:p-6 bg-gray-50">
             <a
               href="#stahlrebellen"
               class="block hover:opacity-80 transition-opacity"
             >
               <h2
-                class="typewriter-title text-xl md:text-2xl font-bold mb-4 leading-tight"
+                class="typewriter-title text-lg md:text-2xl font-bold mb-3 md:mb-4 leading-tight"
               >
                 Stahlrebellen: Wenn KI Robotern Flügel verpasst
               </h2>
-              <p class="typewriter-text text-sm mb-2 font-bold">
+              <p class="typewriter-text text-xs md:text-sm mb-2 font-bold">
                 STAHLREBELLEN
               </p>
-              <p class="typewriter-text text-sm leading-relaxed">
+              <p class="typewriter-text text-xs md:text-sm leading-relaxed">
                 Von Fabrikhallen bis Katastrophengebieten: Eine neue Generation
                 von Robotern verändert die Arbeitswelt...
               </p>
@@ -301,14 +407,18 @@
       </section>
 
       <!-- About Section -->
-      <section class="mb-12 border-4 border-black p-8">
-        <h2 class="typewriter-title text-3xl font-bold mb-6 text-center">
+      <section
+        class="mb-8 md:mb-12 border-4 border-black p-4 md:p-8 mx-2 md:mx-0"
+      >
+        <h2
+          class="typewriter-title text-xl md:text-3xl font-bold mb-4 md:mb-6 text-center"
+        >
           Was ist Zukunft Welle?
         </h2>
-        <div
-          class="newspaper-column typewriter-text text-sm leading-relaxed mb-8"
-        >
-          <p>
+        <div class="typewriter-text text-sm leading-relaxed mb-6 md:mb-8">
+          <p
+            class="md:column-count-2 md:column-gap-8 md:column-rule md:column-rule-black"
+          >
             Wir sind ein digitales Magazin, das sich aktiv für die Förderung der
             Diversität in all ihren Formen einsetzt – sei es im Hinblick auf
             Alter, Geschlecht, Sprache, religiöse Überzeugungen oder kulturelle
@@ -320,7 +430,7 @@
           </p>
         </div>
         <h3
-          class="typewriter-title text-2xl font-bold mb-4 text-center border-t-2 border-black pt-6"
+          class="typewriter-title text-lg md:text-2xl font-bold mb-3 md:mb-4 text-center border-t-2 border-black pt-4 md:pt-6"
         >
           Mission
         </h3>
@@ -333,37 +443,43 @@
       </section>
 
       <!-- Sections Grid -->
-      <section class="mb-12">
+      <section class="mb-8 md:mb-12 px-2 md:px-0">
         <h2
-          class="typewriter-title text-3xl font-bold mb-8 text-center border-b-2 border-black pb-4"
+          class="typewriter-title text-xl md:text-3xl font-bold mb-6 md:mb-8 text-center border-b-2 border-black pb-3 md:pb-4"
         >
           KATEGORIEN
         </h2>
-        <div class="grid md:grid-cols-3 gap-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4">
           <a
             href="#codechaos"
-            class="section-hover border-2 border-black p-4 cursor-pointer block"
+            class="section-hover border-2 border-black p-3 md:p-4 cursor-pointer block"
           >
-            <h3 class="typewriter-title text-lg font-bold">
+            <h3 class="typewriter-title text-sm md:text-lg font-bold">
               Softwareentwicklung
             </h3>
-            <p class="typewriter-text text-sm font-bold">→ CODECHAOS</p>
+            <p class="typewriter-text text-xs md:text-sm font-bold">
+              → CODECHAOS
+            </p>
           </a>
           <a
             href="#datenjunkies"
-            class="section-hover border-2 border-black p-4 cursor-pointer block"
+            class="section-hover border-2 border-black p-3 md:p-4 cursor-pointer block"
           >
-            <h3 class="typewriter-title text-lg font-bold">Data Science</h3>
-            <p class="typewriter-text text-sm font-bold">→ DATENJUNKIES</p>
+            <h3 class="typewriter-title text-sm md:text-lg font-bold">
+              Data Science
+            </h3>
+            <p class="typewriter-text text-xs md:text-sm font-bold">
+              → DATENJUNKIES
+            </p>
           </a>
           <a
             href="#maschinengefluster"
-            class="section-hover border-2 border-black p-4 cursor-pointer block"
+            class="section-hover border-2 border-black p-3 md:p-4 cursor-pointer block"
           >
-            <h3 class="typewriter-title text-lg font-bold">
+            <h3 class="typewriter-title text-sm md:text-lg font-bold">
               Künstliche Intelligenz
             </h3>
-            <p class="typewriter-text text-sm font-bold">
+            <p class="typewriter-text text-xs md:text-sm font-bold">
               → MASCHINENGEFLÜSTER
             </p>
           </a>
@@ -1509,6 +1625,275 @@
         </div>
       </section>
 
+      <!-- Codechaos Article Section -->
+      <section id="codechaos" class="mb-12 border-4 border-black p-8">
+        <div class="text-center mb-8">
+          <h2 class="typewriter-title text-3xl md:text-4xl font-bold mb-4">
+            Softwareentwicklung: Künstliche Intelligenz
+          </h2>
+          <div class="bg-black text-white px-4 py-2 inline-block">
+            <span class="typewriter-text text-sm font-bold">CODECHAOS</span>
+          </div>
+        </div>
+
+        <div class="max-w-4xl mx-auto">
+          <!-- Imagen del artículo -->
+          <div class="mb-8 text-center">
+            <img
+              src="https://raw.githubusercontent.com/neurodivergent-coder/landingpage/refs/heads/main/20250822_0240_K%C3%BCnstliche%20Intelligenz%20Highlights_simple_compose_01k38eyryrfnw8wmvthj3p9s4m.png"
+              alt="Künstliche Intelligenz Highlights"
+              class="max-w-full h-auto border-2 border-black rounded-lg shadow-lg"
+              crossorigin="anonymous"
+              loading="lazy"
+              onerror="console.log('Error loading image:', this.src); this.style.display='block'; this.style.background='#f0f0f0'; this.style.minHeight='200px';"
+            />
+          </div>
+
+          <!-- Einleitung -->
+          <div class="mb-8">
+            <h3
+              class="typewriter-title text-2xl font-bold mb-4 border-b-2 border-black pb-2"
+            >
+              Einleitung
+            </h3>
+            <div
+              class="newspaper-column typewriter-text text-sm leading-relaxed"
+            >
+              <p class="mb-4">
+                Im Jahr 2025 spielt künstliche Intelligenz (KI) eine immer
+                größere Rolle in der Softwareentwicklung und verändert besonders
+                das Webdesign und die Art, wie digitale Produkte entstehen.
+                Schon 2024 konnte man sehen, wie Programme wie GitHub Copilot
+                oder Tabnine alltägliche Arbeiten von Entwicklern unterstützen.
+              </p>
+              <p class="mb-4">
+                Diese Systeme sind in der Lage, Code automatisch zu analysieren,
+                Vorschläge zu erklären und Alternativen in Echtzeit zu anbieten.
+                Dadurch sparen Programmierer Zeit, können sich besser auf
+                kreative Projekte konzentrieren und müssen weniger monotone
+                Aufgaben wiederholen.
+              </p>
+            </div>
+          </div>
+
+          <!-- Hauptteil -->
+          <div class="mb-8">
+            <h3
+              class="typewriter-title text-2xl font-bold mb-4 border-b-2 border-black pb-2"
+            >
+              💻 Hauptteil
+            </h3>
+
+            <!-- KI-Tools in der Entwicklung -->
+            <div class="mb-6">
+              <h4 class="typewriter-title text-xl font-bold mb-3">
+                1. KI-Tools revolutionieren die Entwicklung
+              </h4>
+              <div class="typewriter-text text-sm leading-relaxed space-y-4">
+                <p>
+                  Die Integration von KI in Entwicklungsumgebungen hat die Art,
+                  wie Software geschrieben wird, grundlegend verändert. Moderne
+                  KI-Assistenten können nicht nur Code vervollständigen, sondern
+                  auch komplexe Algorithmen erklären und Optimierungsvorschläge
+                  machen.
+                </p>
+
+                <!-- KI Tools Liste -->
+                <div class="bg-gray-100 border-2 border-black p-4">
+                  <ul class="space-y-2 font-bold">
+                    <li>
+                      • <strong>GitHub Copilot:</strong> Automatische
+                      Code-Vervollständigung und Funktionsgenerierung
+                    </li>
+                    <li>
+                      • <strong>Tabnine:</strong> Intelligente Vorhersagen
+                      basierend auf dem Projektkontext
+                    </li>
+                    <li>
+                      • <strong>ChatGPT/Claude:</strong> Code-Erklärungen und
+                      Debugging-Hilfe
+                    </li>
+                    <li>
+                      • <strong>Cursor AI:</strong> Vollständige IDE mit
+                      integrierter KI-Unterstützung
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Auswirkungen auf Webdesign -->
+            <div class="mb-6">
+              <h4 class="typewriter-title text-xl font-bold mb-3">
+                2. Transformation im Webdesign
+              </h4>
+              <div class="typewriter-text text-sm leading-relaxed space-y-4">
+                <p>
+                  Besonders im Webdesign zeigt sich der Einfluss der KI
+                  deutlich. Designer und Entwickler können heute mit natürlicher
+                  Sprache beschreiben, was sie erstellen möchten, und die KI
+                  generiert entsprechenden HTML-, CSS- und JavaScript-Code.
+                </p>
+
+                <!-- Vorteile Box -->
+                <div class="bg-blue-50 border-2 border-blue-500 p-4">
+                  <h5 class="font-bold mb-2 text-blue-800">
+                    Vorteile für Webentwickler:
+                  </h5>
+                  <ul class="space-y-1 text-sm">
+                    <li>• Schnellere Prototypenerstellung</li>
+                    <li>• Automatische Responsive Design-Anpassungen</li>
+                    <li>• Intelligente Accessibility-Implementierung</li>
+                    <li>• Code-Optimierung für bessere Performance</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Kreativität vs. Effizienz -->
+            <div class="mb-6">
+              <h4 class="typewriter-title text-xl font-bold mb-3">
+                3. Mehr Zeit für Kreativität
+              </h4>
+              <div class="typewriter-text text-sm leading-relaxed space-y-4">
+                <p>
+                  Durch die Automatisierung repetitiver Aufgaben können sich
+                  Entwickler verstärkt auf die kreativen und strategischen
+                  Aspekte ihrer Arbeit konzentrieren. Statt stundenlang
+                  Boilerplate-Code zu schreiben, können sie sich auf
+                  Problemlösung und Innovation fokussieren.
+                </p>
+
+                <!-- Zitat Box -->
+                <div
+                  class="bg-yellow-50 border-l-4 border-yellow-500 p-4 italic"
+                >
+                  <p class="typewriter-text text-sm">
+                    "KI nimmt uns nicht die Arbeit weg – sie macht uns zu
+                    besseren Problemlösern."
+                  </p>
+                  <p class="text-right text-xs mt-2 font-bold">
+                    — Entwickler-Community 2025
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Herausforderungen -->
+            <div class="mb-6">
+              <h4 class="typewriter-title text-xl font-bold mb-3">
+                4. Herausforderungen und Grenzen
+              </h4>
+              <div class="typewriter-text text-sm leading-relaxed space-y-4">
+                <p>
+                  Trotz aller Vorteile bringt KI in der Softwareentwicklung auch
+                  Herausforderungen mit sich:
+                </p>
+
+                <div class="space-y-4">
+                  <div class="border-l-4 border-red-500 pl-4">
+                    <h5 class="font-bold mb-2">Code-Qualität:</h5>
+                    <p>
+                      KI-generierter Code muss immer überprüft und getestet
+                      werden, da er nicht immer optimal oder sicher ist.
+                    </p>
+                  </div>
+
+                  <div class="border-l-4 border-orange-500 pl-4">
+                    <h5 class="font-bold mb-2">Abhängigkeit:</h5>
+                    <p>
+                      Entwickler könnten grundlegende Programmierfähigkeiten
+                      vernachlässigen.
+                    </p>
+                  </div>
+
+                  <div class="border-l-4 border-purple-500 pl-4">
+                    <h5 class="font-bold mb-2">Datenschutz:</h5>
+                    <p>
+                      Sensible Codebereiche sollten nicht mit externen
+                      KI-Services geteilt werden.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fazit -->
+          <div class="mb-6">
+            <h4 class="typewriter-title text-xl font-bold mb-3">💡 Fazit</h4>
+            <div class="typewriter-text text-sm leading-relaxed space-y-4">
+              <p>
+                KI in der Softwareentwicklung ist keine Zukunftsvision mehr,
+                sondern Realität. Sie verändert nicht nur, wie wir Code
+                schreiben, sondern auch, wie wir über Problemlösung denken. Die
+                Technologie ermöglicht es Entwicklern, effizienter zu arbeiten
+                und sich auf die wirklich wichtigen Aspekte ihrer Projekte zu
+                konzentrieren.
+              </p>
+
+              <!-- Kernaussage Box -->
+              <div class="bg-gray-100 border-2 border-black p-4 text-center">
+                <p class="typewriter-text text-sm font-bold">
+                  Die Zukunft der Softwareentwicklung liegt in der intelligenten
+                  Zusammenarbeit zwischen Mensch und Maschine.
+                </p>
+              </div>
+
+              <p>
+                Entwickler, die KI als Werkzeug verstehen und sinnvoll
+                einsetzen, werden in der digitalen Zukunft die Nase vorn haben.
+                Wichtig ist dabei, die Balance zwischen Effizienz und Qualität
+                zu halten.
+              </p>
+            </div>
+          </div>
+
+          <!-- Back to Homepage Button -->
+          <div class="text-center mb-8">
+            <button
+              onclick="showStartseite()"
+              class="bg-black text-white px-6 py-3 typewriter-title font-bold hover:bg-gray-800 transition-colors duration-300 border-2 border-black inline-block cursor-pointer"
+            >
+              ← ZURÜCK ZUR STARTSEITE
+            </button>
+          </div>
+
+          <!-- Navigation zu anderen Artikeln -->
+          <div class="border-t-2 border-black pt-6">
+            <h4 class="typewriter-title text-lg font-bold mb-4">
+              Weitere Artikel
+            </h4>
+            <div class="grid md:grid-cols-2 gap-4">
+              <div
+                class="border-2 border-black p-4 hover:bg-gray-100 cursor-pointer"
+              >
+                <a href="#datenjunkies" class="block">
+                  <h5 class="typewriter-title font-bold mb-2">
+                    Data Scientists: Die neuen Orakel?
+                  </h5>
+                  <p class="typewriter-text text-xs">
+                    Wie Datenanalyse die Zukunft vorhersagt...
+                  </p>
+                </a>
+              </div>
+              <div
+                class="border-2 border-black p-4 hover:bg-gray-100 cursor-pointer"
+              >
+                <a href="#stahlrebellen" class="block">
+                  <h5 class="typewriter-title font-bold mb-2">
+                    Stahlrebellen: KI gibt Robotern Flügel
+                  </h5>
+                  <p class="typewriter-text text-xs">
+                    Robotik trifft auf künstliche Intelligenz...
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Maschinengeflüster Article Section -->
       <section id="maschinengefluster" class="mb-12 border-4 border-black p-8">
         <div class="text-center mb-8">
@@ -1902,10 +2287,6 @@
 
     <footer class="border-t-4 border-black bg-black text-white mt-12">
       <div class="max-w-6xl mx-auto px-4 py-8 text-center">
-        <div class="logo-font text-2xl font-bold mb-4">
-          <span class="dev-symbols">{</span> ZUKUNFT WELLE FANZINE
-          <span class="dev-symbols">}</span>
-        </div>
         <p class="typewriter-text text-sm mb-4">
           Eine wachsende globale Community für STEAM, Kultur und Vielfalt
         </p>
@@ -1916,8 +2297,8 @@
           <p class="typewriter-text text-sm mb-2">
             alejandrabarcena@zukunftwellefanzine.de
           </p>
-          <p class="typewriter-text text-sm">
-            Landsberger Str. 68, 80339 München, Alemania
+          <p class="typewriter-text text-sm mb-4">
+            Landsberger Str. 68, 80339 München, Deutschland
           </p>
         </div>
 
@@ -1954,11 +2335,6 @@
               >GITHUB</a
             >
           </div>
-        </div>
-
-        <div class="dev-symbols text-xs mt-4">
-          &lt;/html&gt; • © 2024 •
-          &lt;script&gt;console.log('Zukunft')&lt;/script&gt;
         </div>
       </div>
     </footer>
@@ -2025,6 +2401,7 @@
         document.getElementById("datenjunkies").style.display = "none";
         document.getElementById("stahlrebellen").style.display = "none";
         document.getElementById("maschinengefluster").style.display = "none";
+        document.getElementById("codechaos").style.display = "none";
 
         // Scroll to top
         window.scrollTo({ top: 0, behavior: "smooth" });
@@ -2040,7 +2417,8 @@
             if (
               targetId === "datenjunkies" ||
               targetId === "stahlrebellen" ||
-              targetId === "maschinengefluster"
+              targetId === "maschinengefluster" ||
+              targetId === "codechaos"
             ) {
               e.preventDefault();
 
@@ -2049,6 +2427,7 @@
               document.getElementById("stahlrebellen").style.display = "none";
               document.getElementById("maschinengefluster").style.display =
                 "none";
+              document.getElementById("codechaos").style.display = "none";
 
               // Show target section
               document.getElementById(targetId).style.display = "block";
@@ -2072,7 +2451,7 @@
           if (b) {
             var d = b.createElement("script");
             d.innerHTML =
-              "window.__CF$cv$params={r:'994e4981344ad348',t:'MTc2MTUyNzE0OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+              "window.__CF$cv$params={r:'995049707286a634',t:'MTc2MTU0ODExNi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
             b.getElementsByTagName("head")[0].appendChild(d);
           }
         }
